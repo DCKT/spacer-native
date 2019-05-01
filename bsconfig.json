@@ -1,0 +1,31 @@
+// This is the configuration file used by BuckleScript's build system bsb. Its documentation lives here: http://bucklescript.github.io/bucklescript/docson/#build-schema.json
+// BuckleScript comes with its own parser for bsconfig.json, which is normal JSON, with the extra support of comments and trailing commas.
+{
+  "name": "@dck/spacer-native",
+  "description":
+    "An utility component for pushing other elements and avoid `padding`, `margin` everywhere.",
+  "version": "1.0.0",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "reason-react",
+    "bs-react-native-monorepo/bs-react-native",
+    "bs-react-native-monorepo/reason-react-native"
+  ],
+  "js-post-build": {
+    "cmd": "./node_modules/bs-react-native-monorepo/git-monorepo-usage-trick"
+  },
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": false,
+  "refmt": 3,
+  "reason": { "react-jsx": 3 }
+}

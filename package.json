@@ -1,0 +1,27 @@
+{
+  "name": "@dck/spacer-native",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "BuckleScript",
+    "reasonml",
+    "react",
+    "react-native",
+    "reason-react"
+  ],
+  "author": "Thomas Deconinck",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "5.0.4"
+  },
+  "dependencies": {
+    "bs-react-native-monorepo":
+      "https://github.com/reasonml-community/bs-react-native.git",
+    "reason-react": "0.7.0"
+  },
+  "main": "index.js"
+}
