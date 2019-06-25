@@ -14,7 +14,7 @@ yarn add @dck/spacer-native
 
 ```js
 import { Text } from 'react-native'
-import Spacer from '@dck/spacer-native
+import Spacer from '@dck/spacer-native'
 
 const App = () => {
   <>
